@@ -19,6 +19,10 @@ a{
 	color: inherit;
 	text-decoration: none;
 }
+a:hover {
+	color: inherit;
+	text-decoration: none;
+}
 img{
 	max-width: 100%;
 }
@@ -111,6 +115,7 @@ blockquote span{
 	background-color: rgba(255, 255, 255, .9);
 }
 .btn.btn-xs{
+	padding: 8px 14px;
 	color: #777;
 	font-size: 11px;
 	background-color: rgba(0, 0, 0, .1);
@@ -191,7 +196,7 @@ blockquote span{
 }
 .form-control:focus{
 	border-color: #bfbebe;
-	/*box-shadow: none;*/
+	box-shadow: none;
 }
 textarea.form-control{
 	min-height: 90px;
@@ -355,7 +360,24 @@ textarea.form-control{
 		transform: none;
 	}
 }
-
+@media (max-width: 767px) {
+	.inner-content h6{
+		letter-spacing: 0.7em;
+		text-indent: 0.7em;
+	}
+}
+@media (max-width: 479px) {
+	.inner-content h6{
+		letter-spacing: 0.5em;
+		text-indent: 0.5em;
+	}
+	.inner-content span {
+		font-size: 16px;
+	}
+	.inner-content h6 {
+		margin-bottom: 50px;
+	}
+}
 .our-team{
 	margin-top: 100px;
 }
@@ -396,6 +418,11 @@ textarea.form-control{
 }
 .lets-talk-img{
 	margin-top: -32px;
+}
+@media (max-width: 991px){
+	.lets-talk img{
+		display: none;
+	}
 }
 .portfolio{
 	padding-top: 140px;
@@ -563,6 +590,12 @@ textarea.form-control{
 		margin-bottom: 30px;
 	}
 }
+@media (max-width: 479px) {
+	.latest-news .title a {
+		width: 100%;
+		margin-top: 20px;
+	}
+}
 .news-img img{
 	width: 100%;
 }
@@ -586,9 +619,6 @@ textarea.form-control{
 	font-size: 15px;
 	color: #777;
 	line-height: 1.73;
-}
-.btn.btn-xs{
-	padding: 8px 14px;
 }
 .news-block .btn{
 	margin-top: 25px;
@@ -716,6 +746,9 @@ textarea.form-control{
 	.service-tab .tablist-title{
 		font-size: 13px;
 		letter-spacing: .2em;
+	}
+	.padding-mobile{
+		padding-top: 15px;
 	}
 }
 @media (max-width: 767px) {
