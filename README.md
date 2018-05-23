@@ -1,1 +1,1 @@
-### Мой первый проект на Git
+### Landing page on bootstrap with font-awesome icons
